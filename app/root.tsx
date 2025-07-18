@@ -46,13 +46,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const [isGaleriaOpen, setIsGaleriaOpen] = useState(false);
 
   return (
     <>
     <header className="flex flex-col justify-between items-center bg-linear-75 from-rose-300 from-40% via-pink-200 via-60% to-rose-300 to-80% text-black">
       <div className="w-full flex justify-center">
-        <img className="h-30" src="/mirandaMussaLogo.png" alt="Miranda Mussa Logo" />
+        <img className="h-30 my-3" src="/miranda-mussas/mirandaMussaLogo.png" alt="Miranda Mussa Logo" />
       </div>
         <Navbar2></Navbar2>
     </header>
