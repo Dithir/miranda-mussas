@@ -7,10 +7,10 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export default function About() {
   return (
     <div className="flex items-center justify-center text-[100px] mt-20">
-      This is Home!
+      This is About!
     </div>
   )
 }

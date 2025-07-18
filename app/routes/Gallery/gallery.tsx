@@ -1,4 +1,5 @@
-import type { Route } from "./+types/home";
+import { Outlet } from "react-router";
+import type { Route } from "./+types/gallery";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,10 +8,8 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export default function Gallery() {
   return (
-    <div className="flex items-center justify-center text-[100px] mt-20">
-      This is Home!
-    </div>
+      <Outlet />
   )
 }

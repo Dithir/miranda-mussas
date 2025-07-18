@@ -5,10 +5,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  Link
 } from "react-router";
+import { useState } from "react";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import Navbar from "./Components/Navbar/Navbar"
+import Navbar2 from "./Components/Navbar/Navbar2";;
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,7 +46,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const [isGaleriaOpen, setIsGaleriaOpen] = useState(false);
+
+  return (
+    <>
+    <header className="flex flex-col justify-between items-center bg-linear-75 from-rose-300 from-40% via-pink-200 via-60% to-rose-300 to-80% text-black">
+      <div className="w-full flex justify-center">
+        <img className="h-30" src="/mirandaMussaLogo.png" alt="Miranda Mussa Logo" />
+      </div>
+        <Navbar2></Navbar2>
+    </header>
+    <Outlet />
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
