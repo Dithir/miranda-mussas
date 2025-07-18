@@ -10,7 +10,7 @@
         "preview": "vite preview",
     "nj": "touch ./docs/.nojekyll && touch ./.nojekyll",
     "hack-404":"cp ./docs/index.html ./docs/404.html",
-    "unnest": "mv ./build/client/my-react-router-app/* ./build/client && rm -rf ./build/client/my-react-router-app",
+    "unnest": "mv ./build/client/miranda-mussas/* ./build/client && rm -rf ./build/client/miranda-mussas",
     "build-clean": "rm -rf ./build && rm -rf ./docs",
     "build-cp":"cp -r ./build/client ./docs",
     "prepublish-prerender": "npm run build-clean && npm run build && npm run unnest && npm run build-cp && npm run nj  && npm run hack-404",
