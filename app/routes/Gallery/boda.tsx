@@ -9,7 +9,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Boda() {
   return (
-    <div className="flex items-center justify-center text-[100px] mt-20">
+    <div className="flex items-center justify-center text-[100px] mt-20 text-black">
       This is Boda!
     </div>
   )
