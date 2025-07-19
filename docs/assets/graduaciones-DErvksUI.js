@@ -1,0 +1,1 @@
+import{w as e,p as t}from"./chunk-EF7DTUVF-DGrpFN4n.js";function r({}){return[{title:"New React Router App"},{name:"description",content:"Welcome to React Router!"}]}const s=e(function(){return t.jsx("div",{className:"flex items-center justify-center text-[100px] mt-20",children:"This is Graduaciones!"})});export{s as default,r as meta};

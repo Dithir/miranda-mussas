@@ -7,12 +7,12 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-        "preview": "vite preview",
+    "preview": "vite preview",
     "nj": "touch ./docs/.nojekyll && touch ./.nojekyll",
-    "hack-404":"cp ./docs/index.html ./docs/404.html",
+    "hack-404": "cp ./docs/index.html ./docs/404.html",
     "unnest": "mv ./build/client/miranda-mussas/* ./build/client && rm -rf ./build/client/miranda-mussas",
     "build-clean": "rm -rf ./build && rm -rf ./docs",
-    "build-cp":"cp -r ./build/client ./docs",
+    "build-cp": "cp -r ./build/client ./docs",
     "prepublish-prerender": "npm run build-clean && npm run build && npm run unnest && npm run build-cp && npm run nj  && npm run hack-404",
     "prepublish-no-prerender": "npm run build-clean && npm run build && npm run build-cp && npm run nj && npm run hack-404"
   },
@@ -22,7 +22,9 @@
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router": "^7.7.0"
+    "react-router": "^7.7.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@react-router/dev": "^7.7.0",
@@ -30,6 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@types/react-slick": "^0.23.13",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",

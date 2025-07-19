@@ -1,1 +1,0 @@
-import{w as t,p as e}from"./chunk-EF7DTUVF-CrlayR3o.js";function r({}){return[{title:"New React Router App"},{name:"description",content:"Welcome to React Router!"}]}const s=t(function(){return e.jsx("div",{className:"flex items-center justify-center text-[100px] mt-20",children:"This is About!"})});export{s as default,r as meta};
