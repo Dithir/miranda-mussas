@@ -63,12 +63,12 @@ export default function App() {
             <div
                 className="fixed inset-0 bg-black/70 bg-opacity-50 flex items-center justify-center z-50"
             > 
-              <div className="animate-shrink-grow w-80 h-80 relative bg-white rounded-full">
-                <img className="animate-shrink-grow absolute w-[66px] top-13 left-14" src="/miranda-mussas/SplitLogo/FlowerLogo.png" alt="Miranda Mussa Logo" />
-                <img className="animate-shrink-grow absolute w-[148px] right-13 top-13" src="/miranda-mussas/SplitLogo/TopRightLogo.png" alt="Miranda Mussa Logo" />
-                <img className="animate-shrink-grow absolute w-[208px] left-14 top-17" src="/miranda-mussas/SplitLogo/CenterLogo.png" alt="Miranda Mussa Logo" />
-                <img className="animate-shrink-grow absolute w-[141px] top-[116px] left-[54px]" src="/miranda-mussas/SplitLogo/BottomLeftLogo.png" alt="Miranda Mussa Logo" />
-                <img className="animate-shrink-grow absolute w-[99px] top-40 left-43" src="/miranda-mussas/SplitLogo/BottomRightLogo.png" alt="Miranda Mussa Logo" />
+              <div className="animate-shrink-grow w-104 h-104 relative bg-white rounded-full">
+                <img className="animate-shrink-grow absolute w-[86px] top-18 left-17" src="/miranda-mussas/SplitLogo/FlowerLogo.png" alt="Miranda Mussa Logo" />
+                <img className="animate-shrink-grow absolute w-[192px] left-38 top-17" src="/miranda-mussas/SplitLogo/TopRightLogo.png" alt="Miranda Mussa Logo" />
+                <img className="animate-shrink-grow absolute w-[270px] left-18 top-22" src="/miranda-mussas/SplitLogo/CenterLogo.png" alt="Miranda Mussa Logo" />
+                <img className="animate-shrink-grow absolute w-[183px] top-[152px] left-[70px]" src="/miranda-mussas/SplitLogo/BottomLeftLogo.png" alt="Miranda Mussa Logo" />
+                <img className="animate-shrink-grow absolute w-[129px] top-52.5 left-55" src="/miranda-mussas/SplitLogo/BottomRightLogo.png" alt="Miranda Mussa Logo" />
               </div>
             </div>)}
 
