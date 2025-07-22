@@ -13,6 +13,9 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./Components/Navbar/Navbar"
 import Navbar2 from "./Components/Navbar/Navbar2";;
+import { useNavigate } from "react-router";
+
+
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -47,7 +50,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
 
-  const [launchModal, setLaunchModal] = useState(true);
+  const [launchModal, setLaunchModal] = useState(false); // StartUpLogo
+  const navigate = useNavigate()
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -72,15 +76,10 @@ export default function App() {
               </div>
             </div>)}
 
-            {/* absolute w-20
-            absolute w-50 top-5 right-6
-            absolute w-60 left-14 top-15
-            */}
 
-
-    <header className="flex flex-col justify-between items-center bg-linear-75 from-rose-300 from-40% via-pink-200 via-60% to-rose-300 to-80% text-black">
+    <header className="w-full flex flex-col justify-between items-center bg-linear-75 from-rose-300 from-40% via-pink-200 via-60% to-rose-300 to-80% text-black">
       <div className="w-full flex justify-center">
-        <img className="h-30 my-3" src="/miranda-mussas/mirandaMussaLogo.png" alt="Miranda Mussa Logo" />
+        <img className="animate-wiggle h-30 my-3" onClick={() => {navigate("/")}} src="/miranda-mussas/mirandaMussaLogo.png" alt="Miranda Mussa Logo" />
       </div>
         <Navbar2></Navbar2>
     </header>

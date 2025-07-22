@@ -17,6 +17,10 @@
     "prepublish-no-prerender": "npm run build-clean && npm run build && npm run build-cp && npm run nj && npm run hack-404"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-router/node": "^7.7.0",
     "@react-router/serve": "^7.7.0",
     "isbot": "^5.1.27",
