@@ -50,7 +50,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
 
-  const [launchModal, setLaunchModal] = useState(false); // StartUpLogo
+  const [launchModal, setLaunchModal] = useState(true); // StartUpLogo
   const navigate = useNavigate()
 
   useEffect(() => {
